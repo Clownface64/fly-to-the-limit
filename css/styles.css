@@ -2,10 +2,18 @@ body {
 	margin: 0;
 }
 
+.navigation--locked .global-header {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
 nav {
 	background-color: black;
-	padding: 20px;
 	position: relative;
+
+
 }
 
 nav ul {
@@ -40,9 +48,6 @@ nav li a:hover {
 	float: left;
 	background-color: black;
 	padding: 20px;
-	margin-top: -20px;
-	margin-left: -20px;
-	margin-bottom: 0;
 }
 
 nav:after {
@@ -51,11 +56,25 @@ nav:after {
 	clear:both;
 }
 
-#flight-video {
-	margin: 0 auto;
+.container {
+	position: relative;
+	width: 100%;
+	height:0;
+	padding-bottom: 56.25%;
 }
 
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
+footer {
+	height: 100px;
+	background-color: black;
+}
 
 
 
