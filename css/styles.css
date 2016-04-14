@@ -2,10 +2,7 @@ body {
 	margin: 0;
 }
 
-.navigation--locked .global-header {
-	left: 0;
-	position: fixed;
-	top: 0;
+.nav-fixed, .nav-hide{
 	width: 100%;
 	z-index: 999;
 }
@@ -76,10 +73,15 @@ footer {
 	background-color: black;
 }
 
+.nav-hide {
 
+}
 
-
-
+.nav-fixed {
+	position: fixed;
+	left: 0;
+	right: 0;
+}
 
 
 
