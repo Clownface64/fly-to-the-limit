@@ -5,7 +5,7 @@ var navBar = document.querySelector('nav');
 window.onscroll = function(event) {
 
 	// If the distance from the top is 200px
-	if( document.body.scrollTop >= 200 ) {
+	if( document.body.scrollTop >= 175 ) {
 
 		// Hide the nav
 		navBar.className = 'nav-hide';
