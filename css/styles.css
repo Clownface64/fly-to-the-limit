@@ -1,5 +1,7 @@
 body {
 	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 .nav-fixed, .nav-hide{
@@ -53,6 +55,12 @@ nav:after {
 	clear:both;
 }
 
+main {
+	height: 527px;
+	position: relative;
+
+}
+
 .container {
 	position: relative;
 	width: 100%;
@@ -60,16 +68,12 @@ nav:after {
 	padding-bottom: 56.25%;
 }
 
-video {
+iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-footer {
-	background-color: black;
 }
 
 .nav-hide {
@@ -81,6 +85,14 @@ footer {
 	left: 0;
 	right: 0;
 	width:100%;
+}
+
+footer {
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
 }
 
 .footer-div {
@@ -107,12 +119,13 @@ footer {
 footer ul li {
 	list-style: none;
 	margin-bottom: 5px;	
+	padding: -20px;
 }
 
 footer ul li a {
 	color: white;
 	text-decoration: none;
-
+	font-family: 'Old Standard TT', serif; 
 }
 
 footer:after {
@@ -123,6 +136,9 @@ footer:after {
 
 .footer-div p {
 	text-align: center;
+	font-size: 14px;
+	margin: 14px;
+	font-family: 'Old Standard TT', serif; 
 	/*	margin: 0 20px 0 20px;*/
 }
 
@@ -132,15 +148,6 @@ footer:after {
 	background-color: black;
 }
 
-.footer-div {
-	margin: 20px 0;
-}
-
-main {
-	height: 960px;
-	position: relative;
-
-}
 
 #main-container {
 	background-color: #ff4700;
@@ -156,15 +163,18 @@ main {
 }
 
 .content p {
-	float: right;
-	width: 525px;
-	margin-right: 20px;
+	float: left;
+	width: 60%;
+	margin-right: 15px;
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 13px;
+	font-size: 14px;
+	margin-top: 0px;
+	/*background-color: pink;*/
+	
 }
 
 .content {
-	width: 840px;
+	width: 900px;
 	background-color: blue;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -176,17 +186,48 @@ main {
 	clear: both;
 }
 
-.second-container {
-	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: white;
-	width: 880px;
+.content h1 {
+	float: left;
+	margin-top: 15px;
+	display: block;
+	margin-bottom: 0;
+
+	/*background-color: white;*/
 }
 
+#container {
+	width: 1000px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+}
 
+#scroll-left
+#scroll-right {
+	size: 50px;
+	
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
 
+#scroll-left{
+	left: 0;
+	position: absolute;
+	top: 50%;
+}
 
+#scroll-right{
+	right: 0;
+	position: absolute;
+	top: 50%;
+}
+
+#scroll-left i {
+	color: #1550a1;
+	font-size: 50px;
+}
 
 
 
